@@ -1,0 +1,325 @@
+/*
+**  PLAN CONTAINER
+*/
+
+div.plan-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 330px;
+    background: #fff;
+    border: 1px solid  #DFECFF;
+    border-radius: 4px;
+    margin: 0 5px;
+    min-width: 266px;
+}
+
+/*
+**  ORANGE DETAILS ON PLAN M
+*/
+
+div.plan-container.plano-m::before { 
+    content: ""; 
+    background: #FF6A14; 
+    position: relative; 
+    bottom: 16px; 
+    width: 100%; 
+    height: 19px; 
+    z-index: -1; 
+    border-radius: 4px; 
+    margin-bottom: -9px;
+}
+
+div.plan-container.plano-m::after { 
+    content: ""; 
+    background: #FF6A17; 
+    position: relative; 
+    top: 7px; 
+    width: 100%; 
+    height: 11px; 
+    z-index: -1; 
+    border-radius: 4px; 
+}
+
+
+/*
+**  PLAN HEADER
+*/
+
+div.plan-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 0;
+    border-bottom: 1px solid  #DFECFF;
+}
+
+div.plan-header p{ 
+    color: #1D5297;
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: -5px
+}
+
+/*
+**  PLAN CONTENT
+*/
+
+div.plan-content{
+    border-bottom: 1px solid  #DFECFF;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+div.plan-content div.plan-prices{
+    color: #333333;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+div.plan-content div.plan-prices span{
+    text-decoration: line-through;
+}
+
+div.plan-content div.plan-prices p{
+    text-align: center;
+}
+
+div.plan-content > p{
+    color: #1D5297;
+    font-size: 20px;
+}
+
+div.plan-content > p > span{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+div.plan-content > a{
+    text-decoration: none;
+    color:#fff;
+    background-color:#4480C5;
+    display: block;
+    margin: 22px 0;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 26px;
+    position: relative;
+    top: 0px;
+    -webkit-transition: 
+        top 0.1s;
+    -o-transition: 
+        top 0.1s;
+    transition: 
+        top 0.1s;
+}
+
+div.plan-content > a:hover{
+    opacity: 0.8;
+}
+
+div.plan-content > a:active{
+    top: 2px;
+}
+
+div.plan-content > a.button-orange{
+    background-color: #FF6A17;
+}
+
+div.plan-content > strong{
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+div.plan-content > strong::before{
+    content: "";
+    background: url('../../assets/icon-i.svg');
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+}
+
+div.plan-content > span{
+    color: #1D5297;
+    font-size: 14px;
+}
+
+div.plan-content > span > span.off-disc{
+    display: inline-block;
+    background:#51C99C;
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 224px;
+    padding: 3px 8px;
+    text-transform: uppercase;
+}
+
+/*
+**  PLAN FOOTER
+*/
+
+div.plan-footer{
+    color: #333333;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    padding-left: 33px;
+    padding-right: 33px;
+    line-height: 25px;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+div.plan-footer *{
+    margin-top: 6px;
+}
+
+div.plan-footer .underline{
+    text-decoration: underline;   
+}
+
+div.plan-footer .underline-dotted{
+    border-bottom: 1px dashed rgb(193, 204, 219);
+    display: inline-table;
+    cursor: pointer;
+}
+
+/*
+**  CARROSEL MOBILE
+*/
+
+@media screen and (max-width: 680px) {
+    div.plan-container.plano-p.show{
+        position: relative;
+        margin-left: 555px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    div.plan-container.plano-turbo.show{
+        position: relative;
+        margin-right: 555px;    
+        -webkit-transition: all 0.5s;    
+        -o-transition: all 0.5s;    
+        transition: all 0.5s;
+    }
+
+    div.plan-container.plano-p.hide{
+        position: relative;
+        margin-left: 0px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    div.plan-container.plano-turbo.hide{
+        position: relative;
+        margin-right: 0px;    
+        -webkit-transition: all 0.5s;    
+        -o-transition: all 0.5s;    
+        transition: all 0.5s;
+    }
+   
+
+    div.plans-container.left{
+        margin-left: 0px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    
+    div.plans-container.right{
+        margin-right: 0px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    
+    div.plan-container {
+        width: 266px;
+    }
+
+    div.plan-content > a {
+        padding: 10px 16px;
+    }
+
+    div.plan-content > strong {
+        font-size: 14px;
+    }
+
+    div.plan-content > span {
+        font-size: 13px;
+    }
+
+    div.plan-footer {
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+

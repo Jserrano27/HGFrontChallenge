@@ -1,0 +1,272 @@
+.plans-section {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+form.choose-cycle {
+    color: #1D5297;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.plans-section form p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+div.cycles-container {
+    background: #fff;
+    width: 300px;
+    height: 41px;
+    -webkit-box-shadow: 0px 2px 4px #4480C570;
+            box-shadow: 0px 2px 4px #4480C570;
+    border: 1px solid #4480C5;
+    border-radius: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+div.cycle-container {
+    color: #16437E;
+    background-color: #fff;   
+    border-radius: 21px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+div.cycle-selected {
+    color: #fff;
+    background-color: #4480C5;   
+    font-weight: bold;
+}
+
+div.cycle-container label{
+    cursor: pointer;
+}
+
+div.cycle-selected label::before{
+    background: url("../../assets/radio-button-enabled.svg") no-repeat !important;
+}
+
+div.cycle-container label::before{
+    content: "";
+    display: block;
+    background: url("../../assets/radio-button-disabled.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+div.cycles-container input {
+    margin-right: 0;
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    div.cycles-container {
+        width: 250px;
+        height: 32px;
+        padding: 15px 0px;
+    }
+
+    div.cycle-container {
+        font-size: 10px;
+    }
+
+    div.cycle-container label {
+        position: relative;
+        top: 3px;
+    }
+}
+
+/*
+** PLANS CONTAINER
+*/
+
+div.plans-container{
+    margin-top: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+/*
+**  ARROWS TABLET
+*/
+
+@media screen and (max-width: 1024px) {
+    div.arrows {
+        position: absolute;
+        top: 860px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 87%;
+    }
+
+    div.arrow-left {
+        content: "";
+        background: url('../../assets/arrow-left.svg');
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+    
+    div.arrow-right {
+        content: "";
+        background: url('../../assets/arrow-right.svg');
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    div.arrows {
+        display: none;
+    }
+}
+
+/*
+**  ARROWS MOBILE
+*/
+
+@media screen and (max-width: 680px) {
+    div.arrows-mobile {
+        position: absolute;
+        top: 860px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 87%;
+        z-index: 1;
+    }
+
+    div.arrow-left-mobile {
+        content: "";
+        background: url('../../assets/arrow-left.svg');
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+    
+    div.arrow-right-mobile {
+        content: "";
+        background: url('../../assets/arrow-right.svg');
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    div.arrows-mobile .enabled{
+        opacity: 0.9;
+        position: relative;
+        top: 0px;
+    }
+
+    div.arrows-mobile .enabled:hover{
+        opacity: 0.8;
+    }
+
+    div.arrows-mobile .enabled:active{
+        top: 1px;
+    }
+
+    div.arrows-mobile .disabled{
+        opacity: 0.5;
+        cursor: default;
+    }
+}
+
+
+/*
+**  CARROSSEL
+*/
+    
+@media screen and (max-width: 1024px) {
+    div.plans-container.left{
+        margin-left: 285px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    div.plans-container.right{
+        margin-right: 285px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    div.arrows .enabled{
+        opacity: 0.9;
+        position: relative;
+        top: 0px;
+    }
+
+    div.arrows .enabled:hover{
+        opacity: 0.8;
+    }
+
+    div.arrows .enabled:active{
+        top: 1px;
+    }
+
+    div.arrows .disabled{
+        opacity: 0.5;
+        cursor: default;
+    }
+
+}
+    
+
+
+
+
+
+
+
