@@ -97,7 +97,7 @@ margin: 0 6px 0 0;
 div.arrow-down {
     position: absolute;
     display: flex;
-    top: 429px;
+    top: 425px;
     z-index: 1;
     animation: jump 5s infinite;
     -webkit-animation: jump 5s infinite;
@@ -187,7 +187,7 @@ display: none;
     }
 
     div.arrow-down {
-        top: 400px;
+        top: 395px;
     }
 }
 

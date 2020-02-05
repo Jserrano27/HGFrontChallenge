@@ -203,17 +203,9 @@ div.plans-container{
     }
 
     div.arrows-mobile .enabled{
-        opacity: 0.9;
+        opacity: 1;
         position: relative;
         top: 0px;
-    }
-
-    div.arrows-mobile .enabled:hover{
-        opacity: 0.8;
-    }
-
-    div.arrows-mobile .enabled:active{
-        top: 1px;
     }
 
     div.arrows-mobile .disabled{
@@ -224,7 +216,7 @@ div.plans-container{
 
 
 /*
-**  CARROSSEL
+**  CARROSSEL TABLET
 */
     
 @media screen and (max-width: 1024px) {
@@ -243,7 +235,7 @@ div.plans-container{
     }
 
     div.arrows .enabled{
-        opacity: 0.9;
+        opacity: 1;
         position: relative;
         top: 0px;
     }

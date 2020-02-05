@@ -166,6 +166,7 @@ div.plan-content > strong{
     font-size: 15px;
     color: #333333;
     margin-bottom: 15px;
+    padding: 0 5px;
 }
 
 div.plan-content > strong::before{
@@ -175,8 +176,9 @@ div.plan-content > strong::before{
     height: 15px;
     float: right;
     margin-left: 5px;
+    margin-right: 2px; 
     position: relative;
-    top: 3px;
+    top: 2px;
 }
 
 div.plan-content > span{
@@ -295,6 +297,11 @@ div.plan-footer .underline-dotted{
 
     div.plan-content > strong {
         font-size: 14px;
+    }
+
+    div.plan-content > strong::before {
+        padding-right: 3px;
+        background-repeat: no-repeat;
     }
 
     div.plan-content > span {
